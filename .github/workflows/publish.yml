@@ -39,7 +39,7 @@ jobs:
             touch .env.prod
             yarn --network-timeout=1000000
             yarn build
-            yarn cpx -C 'build/client/**' './docs/'
+            yarn cpx -C './dist/**' './docs/'
             touch './docs/.nojekyll'
             git add docs/
             git commit -m "Rebuild docs by Actions"
