@@ -1,13 +1,11 @@
-import './App.css'
+import './App.css';
 
 function App() {
-  return (
-    <>
-      <p className="read-the-docs">
-        dummy
-      </p>
-    </>
-  )
+	return (
+		<>
+			<p className="read-the-docs">dummy</p>
+		</>
+	);
 }
 
-export default App
+export default App;
