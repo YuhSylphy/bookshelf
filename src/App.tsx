@@ -1,10 +1,16 @@
+import { Provider } from 'react-redux';
+
+import { store } from '@/core/store';
+
 import './App.css';
+
+import { Counter } from '@/feature/counter';
 
 function App() {
 	return (
-		<>
-			<p data-testid="dummy" className="read-the-docs">dummy</p>
-		</>
+		<Provider store={store}>
+			<Counter />
+		</Provider>
 	);
 }
 
