@@ -22,7 +22,13 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "noUncheckedIndexedAccess": true,
+
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["@types/vite-env.d.ts", "src"]
+  "include": ["@types/vite-env.d.ts", "./vitest.setup.ts", "src"]
 }
