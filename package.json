@@ -9,7 +9,8 @@
     "build": "tsc -b && yarn lint && vite build",
     "lint": "eslint --fix src && prettier --write src",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -24,6 +25,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
+    "@vitest/coverage-v8": "^4.0.18",
     "cpx": "^1.5.0",
     "dotenv": "^17.3.1",
     "eslint": "^9.39.1",

@@ -10,5 +10,9 @@ export default defineConfig(({ mode }) => ({
 	test: {
 		environment: 'jsdom',
 		setupFiles: ['vitest.setup.ts'],
+		coverage: {
+			enabled: true,
+			include: ['src/**/*.{ts,tsx}'],
+		},
 	},
 }));
